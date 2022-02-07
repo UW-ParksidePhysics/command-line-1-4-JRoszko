@@ -1,1 +1,86 @@
+#Concepts
+Directory, lists, data type, shell, prompt
+Last login: Mon Feb  7 13:58:33 on ttys001
 
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+cart-158:~ roszk009$ ls
+Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public
+cart-158:~ roszk009$ ls /usr
+X11		X11R6		bin		lib		libexec		local		sbin		share		standalone
+cart-158:~ roszk009$ ls ~ /usr
+/Users/roszk009:
+Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public
+
+/usr:
+X11		X11R6		bin		lib		libexec		local		sbin		share		standalone
+cart-158:~ roszk009$ ls -l
+total 0
+drwx------+  5 roszk009  UWP\Domain Users   160 Jan 31 15:49 Desktop
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Documents
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Downloads
+drwx------@ 75 roszk009  UWP\Domain Users  2400 Feb  7 14:01 Library
+drwx------   4 roszk009  UWP\Domain Users   128 Feb  7 14:01 Movies
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Music
+drwx------+  4 roszk009  UWP\Domain Users   128 Jan 31 14:22 Pictures
+drwxr-xr-x+  4 roszk009  UWP\Domain Users   128 Jan 31 14:20 Public
+cart-158:~ roszk009$ command -options arguments
+-bash: command: -o: invalid option
+command: usage: command [-pVv] command [arg ...]
+cart-158:~ roszk009$ ls -lt
+total 0
+drwx------   4 roszk009  UWP\Domain Users   128 Feb  7 14:01 Movies
+drwx------@ 75 roszk009  UWP\Domain Users  2400 Feb  7 14:01 Library
+drwx------+  5 roszk009  UWP\Domain Users   160 Jan 31 15:49 Desktop
+drwx------+  4 roszk009  UWP\Domain Users   128 Jan 31 14:22 Pictures
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Downloads
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Documents
+drwxr-xr-x+  4 roszk009  UWP\Domain Users   128 Jan 31 14:20 Public
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Music
+cart-158:~ roszk009$ ls -lt
+total 0
+drwx------   4 roszk009  UWP\Domain Users   128 Feb  7 14:01 Movies
+drwx------@ 75 roszk009  UWP\Domain Users  2400 Feb  7 14:01 Library
+drwx------+  5 roszk009  UWP\Domain Users   160 Jan 31 15:49 Desktop
+drwx------+  4 roszk009  UWP\Domain Users   128 Jan 31 14:22 Pictures
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Downloads
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Documents
+drwxr-xr-x+  4 roszk009  UWP\Domain Users   128 Jan 31 14:20 Public
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Music
+cart-158:~ roszk009$ ls -lt --reverse
+ls: unrecognized option `--reverse'
+usage: ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format] [file ...]
+cart-158:~ roszk009$ -rev
+-bash: -rev: command not found
+cart-158:~ roszk009$ ls -ltr
+total 0
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Music
+drwxr-xr-x+  4 roszk009  UWP\Domain Users   128 Jan 31 14:20 Public
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Documents
+drwx------+  3 roszk009  UWP\Domain Users    96 Jan 31 14:20 Downloads
+drwx------+  4 roszk009  UWP\Domain Users   128 Jan 31 14:22 Pictures
+drwx------+  5 roszk009  UWP\Domain Users   160 Jan 31 15:49 Desktop
+drwx------@ 75 roszk009  UWP\Domain Users  2400 Feb  7 14:01 Library
+drwx------   4 roszk009  UWP\Domain Users   128 Feb  7 14:01 Movies
+cart-158:~ roszk009$ ls
+Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public
+cart-158:~ roszk009$ ls -r
+Public		Pictures	Music		Movies		Library		Downloads	Documents	Desktop
+cart-158:~ roszk009$ ls --help
+ls: unrecognized option `--help'
+usage: ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format] [file ...]
+cart-158:~ roszk009$ man ls
+cart-158:~ roszk009$ file music
+music: directory
+cart-158:~ roszk009$ less /etc/passwd
+cart-158:~ roszk009$ less /etc/passwd
+cart-158:~ roszk009$ exit
+logout
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
